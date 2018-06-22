@@ -22,5 +22,27 @@ yarn-error.log
 /.web-server-pid
 ###< symfony/web-server-bundle ###
 
-# IDE
+# JAVASCRIPT DEV
+.DS_Store
+node_modules
+
+assets/tests/e2e/reports/
+selenium-debug.log
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
 .idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
