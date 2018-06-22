@@ -42,5 +42,14 @@ module.exports = {
         args[0][0].to = BUILD_DIR
         return args
       })
+  },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: process.env.DEV_API_URL,
+        ws: true,
+        changeOrigin: true
+      }
+    }
   }
 }
