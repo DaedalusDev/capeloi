@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  context: path.resolve(__dirname, './assets'),
+  context: path.resolve(__dirname, './front'),
     resolve: {
     alias: {
-      "@": path.resolve(__dirname, './assets/src')
+      "@": path.resolve(__dirname, './front/src')
     }
   }
 };
